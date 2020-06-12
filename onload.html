@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>onloadTest</title>
+</head>
+
+<body>
+  <script>
+    const $ = function(foo){
+      foo();
+    }
+
+    const f = function(){
+      console.log("f started ", new Date().getMilliseconds());
+    }
+
+    $(f);
+    window.onload = $.bind(this,f);
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      console.log("DOMContentLoaded started");
+    });
+
+  </script>
+
+  <img src="https://avatars.mds.yandex.net/get-pdb/2828228/dc73247d-187c-4dc0-a22b-e64083300198/s1200">
+</body>
+
+</html>

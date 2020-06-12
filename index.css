@@ -1,0 +1,38 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.chat{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.chat__header{
+  flex-basis: 50px;
+  background-color: red;
+}
+
+.chat__main{
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+.chat__users{
+  width: 200px;
+  overflow: scroll;
+  background-color: orange;
+}
+
+.chat__content{
+  flex-grow: 1;
+  overflow: scroll;
+  background-color: blueviolet;
+}
+
+.chat__footer{
+  flex-basis: 100px;
+  background-color: green;
+}
